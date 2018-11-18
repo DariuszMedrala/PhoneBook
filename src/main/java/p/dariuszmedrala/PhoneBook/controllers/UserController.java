@@ -37,7 +37,7 @@ public class UserController {
                                            BindingResult bindingResult,
                                            Model model) {
         if(bindingResult.hasErrors()) {
-            model.addAttribute("registerInfo", "Błędne dane");
+            model.addAttribute("registerInfo", "Some of the data are incorrect!");
             return "registration";
         }
 

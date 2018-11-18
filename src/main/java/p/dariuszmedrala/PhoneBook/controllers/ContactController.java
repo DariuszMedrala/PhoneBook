@@ -41,7 +41,7 @@ public class ContactController {
                                             BindingResult bindingResult,
                                             Model model) {
         if (bindingResult.hasErrors()) {
-            model.addAttribute("hasErrors", "Niektóre z podanych danych są niepoprawne");
+            model.addAttribute("hasErrors", "Some of the data are incorrect!");
             return "addContact";
         }
             contactService.addContact(contactForm);
